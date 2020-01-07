@@ -1,0 +1,9 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+.DS_STORE
+npm-debug.log
+node_modules/
+.env
+logs/*.log
+.idea
+.vscode
+yarn-error.log

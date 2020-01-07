@@ -1,0 +1,41 @@
+{
+  "name": "internal_filestorage",
+  "version": "1.0.0",
+  "description": "A file storage system for kpmg",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon --exec babel-node server/index",
+    "seed": "sequelize db:seed:all",
+    "reset-db": "sequelize db:seed:undo:all",
+    "migrate": "sequelize db:migrate",
+    "create-migration": "sequelize migration:generate --name",
+    "create-model": "sequelize model:generate --name"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.1.0",
+    "faker": "^4.1.0",
+    "file-type": "^12.3.0",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.19.4",
+    "pg": "^7.10.0",
+    "sequelize": "4.28.0",
+    "sequelize-cli": "^5.4.0",
+    "swagger-jsdoc": "^3.2.9",
+    "swagger-model-validator": "^3.0.10",
+    "swagger-ui-express": "^4.0.2",
+    "uuid": "^3.3.2"
+  }
+}
